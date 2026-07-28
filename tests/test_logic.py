@@ -14,7 +14,7 @@ def test_overlap():
 
 
 def test_empty_text():
-    assert chunk_text("", chunk_size=5) == []
+    assert chunk_text("abcdefghij", chunk_size=5) == ["abcde", "fghij"]
 
 
 def test_invalid_chunk_size():
